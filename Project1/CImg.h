@@ -11145,7 +11145,7 @@ namespace cimg_library_suffixed {
 						size_x, size_y, size_z, size_c);
 
 				}
-				const t *ptrs = values; cimg_for(*this, ptrd, T) *ptrd = (T)*(ptrs++);
+	//			const t *ptrs = values; cimg_for(*this, ptrd, T) *ptrd = (T)*(ptrs++);
 			}
 			else { _width = _height = _depth = _spectrum = 0; _data = 0; }
 		}

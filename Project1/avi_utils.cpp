@@ -127,16 +127,16 @@ HRESULT SetAviVideoCompression(HAVI avi, HBITMAP hbm, AVICOMPRESSOPTIONS *opts, 
 }
 
 
-HRESULT AddAviFrame(HAVI avi, HBITMAP hbm, unsigned char* data)
+HRESULT AddAviFrame(HAVI avi, unsigned char* data)
 {
 	if (avi == NULL) return AVIERR_BADHANDLE;
-	if (hbm == NULL) return AVIERR_BADPARAM;
+	//if (hbm == NULL) return AVIERR_BADPARAM;
 
 	BITMAPINFO bitmapInfoHeader;
 
 	bitmapInfoHeader.bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
-	bitmapInfoHeader.bmiHeader.biWidth = 500;
-	bitmapInfoHeader.bmiHeader.biHeight = 500;
+	bitmapInfoHeader.bmiHeader.biWidth = 1000;
+	bitmapInfoHeader.bmiHeader.biHeight = 1000;
 	bitmapInfoHeader.bmiHeader.biPlanes = 1;
 	bitmapInfoHeader.bmiHeader.biBitCount = 24;
 	bitmapInfoHeader.bmiHeader.biCompression = BI_RGB;

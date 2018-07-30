@@ -15,7 +15,7 @@ HAVI CreateAvi(const char *fn, int frameperiod, const WAVEFORMATEX *wfx);
 // The waveformat can be null if you're not going to add any audio,
 // or if you're going to add audio from a file.
 
-HRESULT AddAviFrame(HAVI avi,HBITMAP hbm,unsigned char* data);
+HRESULT AddAviFrame(HAVI avi,unsigned char* data);
 HRESULT AddAviAudio(HAVI avi, void *dat, unsigned long numbytes);
 // AddAviFrame - adds this bitmap to the avi file. hbm must point be a DIBSection.
 // It is the callers responsibility to free the hbm.
